@@ -1,5 +1,6 @@
 using System.Text;
 using API.Data;
+using API.Endpoints;
 using API.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -7,49 +8,62 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
-var JwtSetting=builder.Configuration.GetSection("JWTSetting");
 
+// Load JWT Settings
+var securityKey = builder.Configuration["JWTSetting:SecurityKey"];
+if (string.IsNullOrEmpty(securityKey))
+{
+    throw new InvalidOperationException("SecurityKey is missing in configuration.");
+}
 
-builder.Services.AddDbContext<ApDbContext>(x=>x.UseSqlite("Data Source=chat.db"));//add DbContext name as ApDbContext to connect with database
-builder.Services.AddIdentityCore<AppUser>()//add User class name AppUser into it and interacting with AppDbContext
-.AddEntityFrameworkStores<ApDbContext>()
-.AddDefaultTokenProviders();
+// Add DB Context
+builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlite("Data Source=chat.db"));
 
+// Add Identity
+builder.Services.AddIdentityCore<AppUser>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
 
-
-builder.Services.AddAuthentication(opt=>{
-    opt.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;
+// Configure Authentication
+builder.Services.AddAuthentication(opt =>
+{
+    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    opt.DefaultScheme=JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(opt=>{
-    opt.SaveToken=true;
-    opt.RequireHttpsMetadata=false;
-    opt.TokenValidationParameters=new TokenValidationParameters
+    opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(opt =>
+{
+    opt.SaveToken = true;
+    opt.RequireHttpsMetadata = false;
+    opt.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuerSigningKey=true,
-        IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtSetting.GetSection("SecurityKey").Value!)),
-        ValidateIssuer=false,
-        ValidateAudience=false
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securityKey)),
+        ValidateIssuer = false,
+        ValidateAudience = false
     };
 });
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddAuthorization();
+builder.Services.AddControllers(); // Ensure controllers work properly
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure Middleware
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection(); // Temporarily disable if causing issues
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseStaticFiles();
+app.MapControllers(); // Ensure controllers are mapped
 
+Console.WriteLine("Registering AccountEndpoint...");
+app.MapAccountEndpoint();
+Console.WriteLine("AccountEndpoint registered.");
 
 app.Run();
-
-
