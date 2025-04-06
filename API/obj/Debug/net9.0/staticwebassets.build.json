@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "A5c6GKfqW+kOYxX7+ezU9WKq8ts6/mK8f4alHUBjdmk=",
+  "Hash": "w3HLfi5P4eKEHvbysW58ukaCjOj37p/IfYooN7KSBm4=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qb0ncn79mg",
+      "Integrity": "mqY3uZppVFCQvqco4Z6RuA9Qc2MrLg8N9eEbeKjb8vA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "AssetFile": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mqY3uZppVFCQvqco4Z6RuA9Qc2MrLg8N9eEbeKjb8vA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:07:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mqY3uZppVFCQvqco4Z6RuA9Qc2MrLg8N9eEbeKjb8vA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec.qb0ncn79mg.jpeg",
+      "AssetFile": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mqY3uZppVFCQvqco4Z6RuA9Qc2MrLg8N9eEbeKjb8vA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:07:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qb0ncn79mg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mqY3uZppVFCQvqco4Z6RuA9Qc2MrLg8N9eEbeKjb8vA="
+        }
+      ]
+    }
+  ]
 }

@@ -4,6 +4,8 @@ using API.Models;
 using API.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using API.DTOs;
+
 
 namespace API.Endpoints;
 
@@ -58,6 +60,29 @@ public static class AccountEndpoint
     Console.WriteLine("User created successfully!");
     return Results.Ok(Response<string>.Success("", "User created successfully."));
 }).DisableAntiforgery();
+
+     group.MapPost("/login",async(UserManager<AppUser> userManager,
+     TokenService tokenService,LoginDTO dto)=>{
+        if(dto is null){
+            return Results.BadRequest(Response<string>.Failure("Invaild Login Details"));
+        }
+
+        var user=await userManager.FindByEmailAsync(dto.Email);
+
+        if(user is null){
+            return Results.BadRequest(Response<string>.Failure("User not found"));
+
+        }
+
+        var result=await userManager.CheckPasswordAsync(user!,dto.Password);
+        if(!result){
+            return Results.BadRequest(Response<string>.Failure("Invalid password"));
+        }
+
+        var token=tokenService.GenerateToken(user.Id,user.UserName!);
+        return Results.Ok(Response<string>.Success(token,"Login successfully"));
+
+     });
 
 
         return group;

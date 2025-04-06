@@ -5003,26 +5003,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vasanth\\.nuget\\packages\\": {}
+    "C:\\Users\\p.vasanth\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vasanth\\Downloads\\Angular\\CHAT_.NET_ANG\\CHAT_.NET_ANGULAR\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Vasanth\\Downloads\\Angular\\CHAT_.NET_ANG\\CHAT_.NET_ANGULAR\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Vasanth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vasanth\\Downloads\\Angular\\CHAT_.NET_ANG\\CHAT_.NET_ANGULAR\\API\\obj\\",
+      "projectPath": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\p.vasanth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vasanth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\NuGet.Config",
+        "C:\\Users\\p.vasanth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -5098,7 +5098,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
