@@ -5008,14 +5008,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
+      "projectPath": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
       "packagesPath": "C:\\Users\\p.vasanth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\obj\\",
+      "outputPath": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\NuGet.Config",
+        "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\NuGet.Config",
         "C:\\Users\\p.vasanth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

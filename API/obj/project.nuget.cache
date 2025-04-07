@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "crEAHjcjt8w=",
+  "dgSpecHash": "WoTEtxoXe5M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\p.vasanth\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\p.vasanth\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

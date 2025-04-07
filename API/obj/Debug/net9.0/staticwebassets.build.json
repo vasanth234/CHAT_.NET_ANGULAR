@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w3HLfi5P4eKEHvbysW58ukaCjOj37p/IfYooN7KSBm4=",
+  "Hash": "+KmjWLwIqJQ0j7y3JS3Qa+wVRPSm2T2AxPSVEyu6CHE=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "Identity": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -41,7 +41,7 @@
   "Endpoints": [
     {
       "Route": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
-      "AssetFile": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "AssetFile": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 11:07:45 GMT"
+          "Value": "Mon, 07 Apr 2025 15:37:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -78,7 +78,7 @@
     },
     {
       "Route": "uploads/9199b92a-b105-4d11-bafe-c8b83f5094ec.qb0ncn79mg.jpeg",
-      "AssetFile": "C:\\Users\\p.vasanth\\Documents\\Angular\\ChatAPP.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
+      "AssetFile": "C:\\Users\\p.vasanth\\Documents\\.NET\\Chat_Angular.NET\\CHAT_.NET_ANGULAR\\API\\wwwroot\\uploads\\9199b92a-b105-4d11-bafe-c8b83f5094ec.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 05 Apr 2025 11:07:45 GMT"
+          "Value": "Mon, 07 Apr 2025 15:37:27 GMT"
         },
         {
           "Name": "Cache-Control",
